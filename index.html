@@ -3,16 +3,29 @@
 <head>
     <title>Galletita</title>
     <script src="app.js"></script>
+    <link rel="stylesheet" media="all" href="style.css" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 </head>
 <body>
     <h1 id="contador">0</h1>
-    <img src="/img/cookie_1.png" onclick="clic();"/>
+    <div class="galleta">
+        <img src="/img/cookie_1.png" onclick="clic();"/>
+    </div>
     <br><br>
-    <button onclick="comprar(0);">Cursor (100)</button>
-    <button onclick="comprar(1);">Abuelita (200)</button>
-    <button onclick="comprar(2);">Horno (400)</button>
+   <div class="menu";>
+       <div class="cursores">
+            <button onclick="comprar(0);">Cursor (100)</button>
+        </div>
+        <div class="abuelitas">
+            <button onclick="comprar(1);">Abuela (200)</button>
+        </div>
+        <div class="hornos">
+            <button onclick="comprar(2);">Horno (400)</button>
+        </div>
+    </div>
 
     <div id="inventario"></div>
-
+    <div class="efecto"></div>
+    
 </body>
 </html>
